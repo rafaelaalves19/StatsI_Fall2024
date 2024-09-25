@@ -18,6 +18,7 @@ y <- c(105, 69, 86, 100, 82, 111, 104, 110, 87, 108, 87, 90, 94, 113, 112, 98,
 # mean and standard deviation
 mean_y <- mean(y)
 sd_y <- sd(y)
+#############################################>>>>>>>>>>>>>>>>>> 5 steps of HT - slides 5 to 15
 
 # 90% confidence interval using t.test
 confidence_interval <- t.test(y, conf.level = 0.90)
