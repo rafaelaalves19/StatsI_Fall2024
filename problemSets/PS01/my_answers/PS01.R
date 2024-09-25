@@ -74,6 +74,22 @@ plot(expenditure$X3, expenditure$Y, main="Y vs X3", xlab="residing in urban area
 # the graph shows that spending in housing assistance is lower in rural areas and hight in urban areas
 
 
+# Scatter plot of X1 vs X2
+plot(expenditure$X1, expenditure$X2, main="X1 vs X2", xlab="personal income", ylab="financially insecure residents", col="orange", pch=19)
+# the residents with personal income around 1.500 to 2.100 are the ones with a higher financially insecure situation
+
+
+# Scatter plot of X1 vs X3
+plot(expenditure$X1, expenditure$X3, main="X1 vs X3", xlab="personal income", ylab="residing in urban areas", col="purple", pch=19)
+# people with lower personal income reside un rural areas, and higher incomes in urban areas
+
+
+# Scatter plot of X2 vs X3
+plot(expenditure$X2, expenditure$X3, main="X2 vs X3", xlab="financially insecure residents", ylab="residing in urban areass", col="grey", pch=19)
+# even though people with lower personal incomes live in rural areas, there are less people financially insecure living in rural areas 
+# (can we say that personal income is not related with financial insecure?? income is lower in rural areas but cost of life is cheaper?)
+
+
 # Scatter plot of Y vs Region
 plot(expenditure$Region, expenditure$Y, main="Y vs Region", xlab="1 = NE, 2 = NC, 3 = S, 4 = W", ylab="expenditure on shelters", col="pink", pch=19)
 # On average, the West region has the highest per capita expenditure on housing assistance.
