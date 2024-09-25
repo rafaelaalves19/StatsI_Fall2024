@@ -36,6 +36,7 @@ y <- c(105, 69, 86, 100, 82, 111, 104, 110, 87, 108, 87, 90, 94, 113, 112, 98,
 # one-sample t-test:
 t_test_result <- t.test(y, mu = 100, alternative = "greater", conf.level = 0.05)
 t_test_result
+#############################################>>>>>>>>>>>>>>>>>> elaborate better
 
 # Conclusion:
 # Because the p-value is 0.7215 and it's greater than 0.05, I do not have enough evidence 
