@@ -81,7 +81,23 @@ A school counselor was curious about the average of IQ of the students in her sc
 \begin{enumerate}
 	\item Find a 90\% confidence interval for the average student IQ in the school.\\
 	
-	\lstinputlisting[language=R, firstline=18, lastline=26]{PS01.R}  
+	\lstinputlisting[language=R, firstline=18, lastline=28]{PS01.R}  
+	
+	Results:
+	
+	\begin{verbatim}
+	Mean: 98.44 
+	Standard Deviation: 13.09287 
+	> class(y)    	 [1] "numeric"
+	> length(y) 	[1] 25
+	> # 90% confidence interval using t.test
+	[1]  93.95993 102.92007
+	attr(,"conf.level")
+	[1] 0.9
+	\end{verbatim}
+	
+	
+	
 	
 	\vspace{.1cm}
 	
@@ -91,7 +107,26 @@ A school counselor was curious about the average of IQ of the students in her sc
 
 \vspace{.1cm}
 
-\lstinputlisting[language=R, firstline=37, lastline=39]{PS01.R}  
+\lstinputlisting[language=R, firstline=39, lastline=41]{PS01.R}  
+
+
+Results:
+
+\begin{verbatim}
+	One Sample t-test
+	
+	data:  y
+	t = -0.59574, df = 24, p-value = 0.7215
+	alternative hypothesis: true mean is greater than 100
+	5 percent confidence interval:
+	102.9201      Inf
+	sample estimates:
+	mean of x 
+	98.44 
+\end{verbatim}
+
+
+
 	\vspace{.1cm}
 Conclusion:
 Because the p-value is 0.7215 and it's greater than 0.05, I do not have enough evidence to reject the null hypothesis that average student IQ in the school is equal to the national average of 100 IQ score.
@@ -117,13 +152,19 @@ Because the p-value is 0.7215 and it's greater than 0.05, I do not have enough e
 	\texttt{Region} &  \emph{1=Northeast, 2= North Central, 3= South, 4=West} \\
 \end{tabular}
 
+\clearpage
+
 \vspace{.7cm}
 \noindent Explore the \texttt{expenditure} data set and import data into \texttt{R}.
-\vspace{.5cm}
+\vspace{.7cm}
 
-\lstinputlisting[language=R, firstline=55, lastline=58]{PS01.R}  
-\vspace{.5cm}
+\lstinputlisting[language=R, firstline=54, lastline=70]{PS01.R}  
+\vspace{.7cm}
 
+%pritning the table saved using stargazer
+\input{expenditure_table.tex}
+
+\clearpage
 
 \begin{itemize}
 \item
@@ -132,71 +173,63 @@ Please plot the relationships among \emph{Y}, \emph{X1}, \emph{X2}, and \emph{X3
 
 
 
-	\begin{figure}\centering
-		\begin{minipage}{0.45\textwidth}  
-			\centering
-			\includegraphics[width=\textwidth]{plot_example1.pdf}
-		\end{minipage}\hfill
-			\center
-			There's a correlation between the per capita expenditure in housing assistance regarding the group that has a personal income between 1,600 to 2,100, which doesn't make sense to me because I think the state should spend more on housing assistance with people with lower personal income.
-	\end{figure}
 	
-	
-	
-
-	\begin{figure}\centering
-		\begin{minipage}{0.45\textwidth}  
-			\centering
-			\includegraphics[width=\textwidth]{plot_example2.pdf}
-		\end{minipage}\hfill
-			\center
-			The spent per capita for housing assistance is higher where there are more financially insecure residents which makes sense to me because the housing assistance spending are concentrated where the demographic density are higher for financially insecure residents.
+% Y vs X1
+	\begin{figure}[ht]
+		\centering
+		\includegraphics[width=0.40\textwidth]{plot_example1.pdf}
+		\center
+		There's a correlation between the per capita expenditure in housing assistance regarding the group that has a personal income between 1,600 to 2,100.
 	\end{figure}
 	
 	
 	
 	
-	\begin{figure}\centering
-		\begin{minipage}{0.45\textwidth}  
-			\centering
-			\includegraphics[width=\textwidth]{plot_example3.pdf}
-		\end{minipage}\hfill
-			\center
+	
+% Y vs X2
+		\begin{figure}[ht]
+		\centering
+		\includegraphics[width=0.39\textwidth]{plot_example2.pdf}
+		\center
+			The spent per capita for housing assistance is higher where there are more financially insecure residents.
+	\end{figure}
+	
+	
+	
+	% Y vs X3
+	\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.45\textwidth]{plot_example3.pdf}
+	\center
 			The graph shows that spending in housing assistance is lower in rural areas and hight in urban areas.
 	\end{figure}
 	
 	
 	
-
-	\begin{figure}\centering
-		\begin{minipage}{0.45\textwidth}  
-			\centering
-			\includegraphics[width=\textwidth]{plot_example4.pdf}
-		\end{minipage}\hfill
-			\center
+% X1 vs X2
+	\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.45\textwidth]{plot_example4.pdf}
+	\center
 			The residents with personal income around 1.500 to 2.100 are the ones with a higher financially insecure situation.
 	\end{figure}
 	
 
-
-	\begin{figure}\centering
-		\begin{minipage}{0.45\textwidth}  
-			\centering
-			\includegraphics[width=\textwidth]{plot_example5.pdf}
-		\end{minipage}\hfill
-			\center
+% X1 vs X3
+	\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.45\textwidth]{plot_example5.pdf}
+	\center
 			People with lower personal income reside un rural areas, and higher incomes in urban areas.
 	\end{figure}
 
 
 
-
-	\begin{figure}\centering
-		\begin{minipage}{0.45\textwidth}  
-			\centering
-			\includegraphics[width=\textwidth]{plot_example6.pdf}
-		\end{minipage}\hfill
-			\center
+% X2 vs X3
+	\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.45\textwidth]{plot_example6.pdf}
+	\center
 			Even though people with lower personal incomes live in rural areas, there are less people financially insecure living in rural areas. It may be correct to say that personal income is not related with financial security, and/or the income is lower in rural areas but also the cost of life is cheaper.
 	\end{figure}
 
@@ -208,6 +241,7 @@ Please plot the relationships among \emph{Y}, \emph{X1}, \emph{X2}, and \emph{X3
 Please plot the relationship between \emph{Y} and \emph{Region}? On average, which region has the highest per capita expenditure on housing assistance?
 
 
+% Y vs Region
 \begin{figure}[h!]\centering
 	\begin{minipage}{0.45\textwidth}  
 		\centering
@@ -228,7 +262,7 @@ Please plot the relationship between \emph{Y} and \emph{Region}? On average, whi
 Please plot the relationship between \emph{Y} and \emph{X1}. Reproduce the above graph including one more variable \emph{Region} and display different regions with different types of symbols and colors.
 
 
-
+% Y vs X1 vs Region
 \begin{figure}[h!]\centering
 	\label{fig:plot_1}
 	\includegraphics[width=.75\textwidth]{plot_example8.pdf}

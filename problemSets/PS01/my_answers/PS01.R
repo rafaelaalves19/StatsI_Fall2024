@@ -17,7 +17,9 @@ y <- c(105, 69, 86, 100, 82, 111, 104, 110, 87, 108, 87, 90, 94, 113, 112, 98,
 
 # exploring the data set
 mean_y <- mean(y)
+cat("Mean:", mean_y, "\n")
 sd_y <- sd(y)
+cat("Standard Deviation:", sd_y, "\n")
 class(y)
 length(y)
 
@@ -51,12 +53,20 @@ t_test_result
 
 # uploading expenditure data set
 getwd()
-#reading the file
+setwd("/Users/rafaelaalves/Documents/GitHub/StatsI_Fall2024/problemSets/PS01/my_answers")
+
+
+# reading the file
 expenditure <- read.table("expenditure.txt", header = TRUE, sep = "\t")
 head(expenditure)
 str(expenditure)
 View(expenditure)
 
+
+# installing stargazer package to save table view as a .tex
+install.packages("stargazer")
+library(stargazer)
+stargazer(expenditure, type = "text", out = "expenditure_table.tex")
 
 
 # Scatter plot of Y vs X1
@@ -145,7 +155,7 @@ plot(expenditure$Region, expenditure$Y, main="Y vs Region", xlab="1 = NE, 2 = NC
 pdf("plot_example7.pdf")
 plot(expenditure$Region, expenditure$Y,
      main="Y vs Region", 
-     xlab="1 = NE, 2 = NC, 3 = S, 4 = W", 
+     xlab="1 = North East, 2 = North Central, 3 = South, 4 = West", 
      ylab="expenditure on shelters", 
      col="pink", 
      pch=19)

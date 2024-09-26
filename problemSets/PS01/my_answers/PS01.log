@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.16)  26 SEP 2024 09:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.16)  26 SEP 2024 11:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -920,68 +920,72 @@ Underfull \hbox (badness 10000) in paragraph at lines 82--83
 
  []
 
-(./PS01.R)
-Underfull \hbox (badness 10000) in paragraph at lines 88--89
-
- []
-
-(./PS01.R) [1
-
-{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/loc
-al/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] (./PS01.
-R
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 5
-5.
+(./PS01.R
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 2
+0.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 55.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 20.
 )
-<plot_example1.pdf, id=39, 505.89pt x 505.89pt>
+Underfull \hbox (badness 10000) in paragraph at lines 104--105
+
+ []
+
+[1
+
+{/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/loc
+al/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+(./PS01.R) [2] (./PS01.R) (./expenditure_table.tex) [3
+
+]
+<plot_example1.pdf, id=70, 505.89pt x 505.89pt>
 File: plot_example1.pdf Graphic file (type pdf)
 <use plot_example1.pdf>
-Package pdftex.def Info: plot_example1.pdf  used on input line 138.
-(pdftex.def)             Requested size: 211.38832pt x 211.39165pt.
-<plot_example2.pdf, id=40, 505.89pt x 505.89pt>
+Package pdftex.def Info: plot_example1.pdf  used on input line 180.
+(pdftex.def)             Requested size: 187.89914pt x 187.90196pt.
+<plot_example2.pdf, id=71, 505.89pt x 505.89pt>
 File: plot_example2.pdf Graphic file (type pdf)
 <use plot_example2.pdf>
-Package pdftex.def Info: plot_example2.pdf  used on input line 150.
-(pdftex.def)             Requested size: 211.38832pt x 211.39165pt.
-<plot_example3.pdf, id=41, 505.89pt x 505.89pt>
+Package pdftex.def Info: plot_example2.pdf  used on input line 192.
+(pdftex.def)             Requested size: 183.20416pt x 183.20866pt.
+<plot_example3.pdf, id=72, 505.89pt x 505.89pt>
 File: plot_example3.pdf Graphic file (type pdf)
 <use plot_example3.pdf>
-Package pdftex.def Info: plot_example3.pdf  used on input line 162.
+Package pdftex.def Info: plot_example3.pdf  used on input line 202.
 (pdftex.def)             Requested size: 211.38832pt x 211.39165pt.
-<plot_example4.pdf, id=42, 505.89pt x 505.89pt>
+<plot_example4.pdf, id=73, 505.89pt x 505.89pt>
 File: plot_example4.pdf Graphic file (type pdf)
 <use plot_example4.pdf>
-Package pdftex.def Info: plot_example4.pdf  used on input line 174.
+Package pdftex.def Info: plot_example4.pdf  used on input line 212.
 (pdftex.def)             Requested size: 211.38832pt x 211.39165pt.
-<plot_example5.pdf, id=43, 505.89pt x 505.89pt>
+<plot_example5.pdf, id=74, 505.89pt x 505.89pt>
 File: plot_example5.pdf Graphic file (type pdf)
 <use plot_example5.pdf>
-Package pdftex.def Info: plot_example5.pdf  used on input line 185.
+Package pdftex.def Info: plot_example5.pdf  used on input line 221.
 (pdftex.def)             Requested size: 211.38832pt x 211.39165pt.
-<plot_example6.pdf, id=44, 505.89pt x 505.89pt>
+<plot_example6.pdf, id=75, 505.89pt x 505.89pt>
 File: plot_example6.pdf Graphic file (type pdf)
 <use plot_example6.pdf>
-Package pdftex.def Info: plot_example6.pdf  used on input line 197.
+Package pdftex.def Info: plot_example6.pdf  used on input line 231.
 (pdftex.def)             Requested size: 211.38832pt x 211.39165pt.
+ [4
 
-[2] [3 <./plot_example1.pdf> <./plot_example2.pdf>] [4 <./plot_example3.pdf> <.
-/plot_example4.pdf>] [5 <./plot_example5.pdf> <./plot_example6.pdf>]
-<plot_example7.pdf, id=106, 505.89pt x 505.89pt>
+ <./plot_example1.pdf> <./plot_example2.pdf>] [5 <./plot_example3.pdf> <./plot_
+example4.pdf>]
+[6 <./plot_example5.pdf> <./plot_example6.pdf>]
+<plot_example7.pdf, id=125, 505.89pt x 505.89pt>
 File: plot_example7.pdf Graphic file (type pdf)
 <use plot_example7.pdf>
-Package pdftex.def Info: plot_example7.pdf  used on input line 214.
+Package pdftex.def Info: plot_example7.pdf  used on input line 248.
 (pdftex.def)             Requested size: 211.38832pt x 211.39165pt.
-<plot_example8.pdf, id=107, 505.89pt x 361.35pt>
+<plot_example8.pdf, id=126, 505.89pt x 361.35pt>
 File: plot_example8.pdf Graphic file (type pdf)
 <use plot_example8.pdf>
-Package pdftex.def Info: plot_example8.pdf  used on input line 234.
+Package pdftex.def Info: plot_example8.pdf  used on input line 268.
 (pdftex.def)             Requested size: 352.31625pt x 251.65857pt.
- [6
+ [7
 
  <./plot_example7.pdf> <./plot_example8.pdf>] (./PS01.aux)
  ***********
@@ -992,13 +996,13 @@ Package rerunfilecheck Info: File `PS01.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 27261 strings out of 474116
- 475228 string characters out of 5743682
- 2072187 words of memory out of 5000000
- 49101 multiletter control sequences out of 15000+600000
+ 27293 strings out of 474116
+ 475767 string characters out of 5743682
+ 2062187 words of memory out of 5000000
+ 49114 multiletter control sequences out of 15000+600000
  568855 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,8n,93p,3236b,2131s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,9n,93p,3236b,2131s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 ></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><
@@ -1011,10 +1015,10 @@ l/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local
 texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/t
 exlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/tex
 live/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on PS01.pdf (6 pages, 197895 bytes).
+Output written on PS01.pdf (7 pages, 205096 bytes).
 PDF statistics:
- 183 PDF objects out of 1000 (max. 8388607)
- 133 compressed objects within 2 object streams
- 31 named destinations out of 1000 (max. 500000)
+ 208 PDF objects out of 1000 (max. 8388607)
+ 157 compressed objects within 2 object streams
+ 47 named destinations out of 1000 (max. 500000)
  53 words of extra memory for PDF output out of 10000 (max. 10000000)
 
