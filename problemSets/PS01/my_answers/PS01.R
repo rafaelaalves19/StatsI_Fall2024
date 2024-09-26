@@ -61,41 +61,96 @@ View(expenditure)
 
 # Scatter plot of Y vs X1
 plot(expenditure$X1, expenditure$Y, main="Y vs X1", xlab="personal income", ylab="expenditure on shelters", col="blue", pch=19)
+pdf("plot_example1.pdf")
+plot(expenditure$X1, expenditure$Y,
+     main="Y vs X1", 
+     xlab="personal income", 
+     ylab="expenditure on shelters", 
+     col="blue", 
+     pch=19)
+dev.off()
 # There's a correlation between the per capita expenditure in shelters related to the group that has a personal income of 1.600 to 2.100 per capita
 # which doesn't make sense to me because I think the state should spend more on housing assistance with people with lower personal income
 
 
 # Scatter plot of Y vs X2
 plot(expenditure$X2, expenditure$Y, main="Y vs X2", xlab="financially insecure residents", ylab="expenditure on shelters", col="red", pch=19)
+pdf("plot_example2.pdf")
+plot(expenditure$X2, expenditure$Y,
+     main="Y vs X2", 
+     xlab="financially insecure residents", 
+     ylab="expenditure on shelters", 
+     col="red", 
+     pch=19)
+dev.off()
 # the spent per capita for housing assistance is higher where there are more financially insecure residents which makes sense to me because 
 # the housing assistance spending are concentrated where the demographic density are higher for financially insecure residents
 
 
 # Scatter plot of Y vs X3
 plot(expenditure$X3, expenditure$Y, main="Y vs X3", xlab="residing in urban areas", ylab="expenditure on shelters", col="green", pch=19)
+pdf("plot_example3.pdf")
+plot(expenditure$X3, expenditure$Y,
+     main="Y vs X3", 
+     xlab="residing in urban areas", 
+     ylab="expenditure on shelters", 
+     col="green", 
+     pch=19)
+dev.off()
 # the graph shows that spending in housing assistance is lower in rural areas and hight in urban areas
 
 
 # Scatter plot of X1 vs X2
 plot(expenditure$X1, expenditure$X2, main="X1 vs X2", xlab="personal income", ylab="financially insecure residents", col="orange", pch=19)
+pdf("plot_example4.pdf")
+plot(expenditure$X1, expenditure$X2,
+     main="X1 vs X2", 
+     xlab="personal income", 
+     ylab="financially insecure residents", 
+     col="orange", 
+     pch=19)
+dev.off()
 # the residents with personal income around 1.500 to 2.100 are the ones with a higher financially insecure situation
 
 
 # Scatter plot of X1 vs X3
 plot(expenditure$X1, expenditure$X3, main="X1 vs X3", xlab="personal income", ylab="residing in urban areas", col="purple", pch=19)
+pdf("plot_example5.pdf")
+plot(expenditure$X1, expenditure$X3,
+     main="X1 vs X3", 
+     xlab="personal income", 
+     ylab="residing in urban areas", 
+     col="purple", 
+     pch=19)
+dev.off()
 # people with lower personal income reside un rural areas, and higher incomes in urban areas
 
 
 # Scatter plot of X2 vs X3
 plot(expenditure$X2, expenditure$X3, main="X2 vs X3", xlab="financially insecure residents", ylab="residing in urban areass", col="grey", pch=19)
+pdf("plot_example6.pdf")
+plot(expenditure$X2, expenditure$X3,
+     main="X2 vs X3", 
+     xlab="financially insecure residents", 
+     ylab="residing in urban areas", 
+     col="grey", 
+     pch=19)
+dev.off()
 # even though people with lower personal incomes live in rural areas, there are less people financially insecure living in rural areas 
 # (can we say that personal income is not related with financial insecure?? income is lower in rural areas but cost of life is cheaper?)
 
 
 # Scatter plot of Y vs Region
 plot(expenditure$Region, expenditure$Y, main="Y vs Region", xlab="1 = NE, 2 = NC, 3 = S, 4 = W", ylab="expenditure on shelters", col="pink", pch=19)
+pdf("plot_example7.pdf")
+plot(expenditure$Region, expenditure$Y,
+     main="Y vs Region", 
+     xlab="1 = NE, 2 = NC, 3 = S, 4 = W", 
+     ylab="expenditure on shelters", 
+     col="pink", 
+     pch=19)
+dev.off()
 # On average, the West region has the highest per capita expenditure on housing assistance.
-
 
 
 ############## Reproducing Y vs X1 including one more variable Region and
@@ -110,6 +165,8 @@ expenditure <- data.frame(
   Region = sample(c("1.Northeast", "2.North Central", "3.South", "4.West"), 100, replace = TRUE)  # Random regions
 )
 
+# printing a PDF
+pdf("plot_example8.pdf", width = 7, height = 5)  # Adjust width and height if necessary
 
 ggplot(expenditure, aes(x = X1, y = Y, color = Region, shape = Region)) +
   geom_point(size = 3) +  # Adjust the size of the points if needed
@@ -119,6 +176,7 @@ ggplot(expenditure, aes(x = X1, y = Y, color = Region, shape = Region)) +
   scale_shape_manual(values = c(16, 17, 15, 3)) +  # Specify shapes: 16 = circle, 17 = triangle, 15 = square, 3 = plus
   theme_minimal()
 
+dev.off()
 
 
 
