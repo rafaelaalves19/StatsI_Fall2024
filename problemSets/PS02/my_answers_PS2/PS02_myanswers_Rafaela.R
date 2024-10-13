@@ -69,7 +69,8 @@ standardized_residuals
 
 
 
-######### (d) How might the standardized residuals help you interpret the results?
+######### (d) How might the standardized residuals help you interpret the results? #########
+
 
 # The largest standardized residual is in the "Bribe Requested" cell for lower-class drivers, 
 # with a value of 1.72. This suggests that lower-class drivers were more likely to be asked 
@@ -84,8 +85,45 @@ standardized_residuals
 
 
 
+#####################
+# Question 2: Economics
+#####################
 
 
+######### (a) State a null and alternative (two-tailed) hypothesis #########
+
+
+# Null Hypothesis (H₀): 
+# The reservation policy does NOT have an effect on the number of new or 
+# repaired drinking water facilities in the villages. 
+
+# Alternative Hypothesis (H₁): 
+# The reservation policy DOES have an effect on the number of new or 
+# repaired drinking water facilities. 
+
+
+######### (b) Run a bivariate regression to test this hypothesis in R #########
+
+getwd()
+setwd("/Users/rafaelaalves/Documents/GitHub/StatsI_Fall2024/problemSets/PS02/my_answers_PS2")
+getwd()
+
+#uploading the dataset
+data <- read.csv("dataset_ok.csv")
+head(data)
+
+# fitting a linear model
+model <- lm(water ~ reserved, data = data)
+summary(model)
+
+
+######### (c) Interpret the coefficient estimate for reservation policy #########
+
+# The variable "reserved" has a coefficient of 7.564, which means that villages with reserved 
+# female leaders tend to have about 7.56 more drinking water facilities compared to those without
+# reserved leaders. And considering the p-value (0.0136), we can reject the null-hypothesis 
+# and consider more evidences for the alternative-hypothesis that reservations with female leaderships
+# do have more drinking water facilities. 
 
 
 
