@@ -18,19 +18,21 @@ rownames(observed) <- c("Upper Class", "Lower Class")
 colnames(observed) <- c("Not Stopped", "Bribe Requested", "Stopped/Given Warning")
 observed
 
-
 # 2) calculating the sums for rows, columns and grand total
 row_sums <- rowSums(observed)
 col_sums <- colSums(observed)
 grand_total <- sum(observed)
 
-
 # 3) calculating the expected frequencies
 expected <- outer(row_sums, col_sums) / grand_total
 expected
 
+# stargazer library to save table as .tex
+install.packages("stargazer")
+library(stargazer)
+stargazer(expected, type = "text", out = "expected_table.tex")
 
-# 4) calculating the χ² test statistic
+# 4) calculating the x2 test statistic
 chi_square_stat <- sum((observed - expected)^2 / expected)
 chi_square_stat
 
@@ -41,7 +43,7 @@ df
 
 ######### (b) Calculate the p-value. What do you conclude if α = 0.1? ######### 
 
-# 6) calculating the p-value
+# calculating the p-value
 p_value <- pchisq(chi_square_stat, df = df, lower.tail = FALSE)
 p_value
 
